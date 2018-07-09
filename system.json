@@ -3,38 +3,36 @@
 
   "components": {
     "api": {
-      {
-        "type": "v1/service",
-        "description": "Backend API for status dashboard app",
+      "type": "v1/service",
+      "description": "Backend API for status dashboard app",
 
-        "ports": { "12345": { "protocol": "HTTP" } },
+      "ports": { "12345": { "protocol": "HTTP" } },
 
-        "build": {
-          "git_repository": {
-            "url": "https://github.com/mlab-lattice/status-dashboard.git",
-            "commit": "fcda7dc802610ffbafd5491f8873986482bd6110",
-            "ssh_key": "/:git-ssh-key"
-          },
-          "language": "node:boron",
-          "command": ["cd api && npm install"]
+      "build": {
+        "git_repository": {
+          "url": "https://github.com/mlab-lattice/status-dashboard.git",
+          "commit": "fcda7dc802610ffbafd5491f8873986482bd6110",
+          "ssh_key": "/:git-ssh-key"
         },
+        "language": "node:boron",
+        "command": ["cd api && npm install"]
+      },
 
-        "exec": {
-          "command": [
-            "node",
-            "./api/bin/status-dashboard-api"
-          ],
-          "environment": {
-            "LATTICE_STATUS_DASHBOARD_USERNAME": "/:username",
-            "LATTICE_STATUS_DASHBOARD_PASSWORD": "/:password",
-            "LATTICE_STATUS_DASHBOARD_CONCOURSE_USERNAME": "/:concourse-username",
-            "LATTICE_STATUS_DASHBOARD_CONCOURSE_PASSWORD": "/:concourse-password"
-          }
-        },
+      "exec": {
+        "command": [
+          "node",
+          "./api/bin/status-dashboard-api"
+        ],
+        "environment": {
+          "LATTICE_STATUS_DASHBOARD_USERNAME": "/:username",
+          "LATTICE_STATUS_DASHBOARD_PASSWORD": "/:password",
+          "LATTICE_STATUS_DASHBOARD_CONCOURSE_USERNAME": "/:concourse-username",
+          "LATTICE_STATUS_DASHBOARD_CONCOURSE_PASSWORD": "/:concourse-password"
+        }
+      },
 
-        "num_instances": 1,
-        "instance_type": "t2.small"
-      }
+      "num_instances": 1,
+      "instance_type": "t2.small"
     }
   }
 }
