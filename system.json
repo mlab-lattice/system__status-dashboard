@@ -24,10 +24,10 @@
           "./api/bin/status-dashboard-api"
         ],
         "environment": {
-          "LATTICE_STATUS_DASHBOARD_USERNAME": "/:username",
-          "LATTICE_STATUS_DASHBOARD_PASSWORD": "/:password",
-          "LATTICE_STATUS_DASHBOARD_CONCOURSE_USERNAME": "/:concourse-username",
-          "LATTICE_STATUS_DASHBOARD_CONCOURSE_PASSWORD": "/:concourse-password"
+          "LATTICE_STATUS_DASHBOARD_USERNAME": { "secret": "/:username" },
+          "LATTICE_STATUS_DASHBOARD_PASSWORD": { "secret": "/:password" },
+          "LATTICE_STATUS_DASHBOARD_CONCOURSE_USERNAME": { "secret": "/:concourse-username" },
+          "LATTICE_STATUS_DASHBOARD_CONCOURSE_PASSWORD": { "secret": "/:concourse-password" }
         }
       },
 
