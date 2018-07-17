@@ -33,7 +33,7 @@
       },
 
       "num_instances": 1,
-      "instance_type": "t2.small"
+      "node_pool": { "instance_type": "t2.small", "num_instances": 1 }
     }
   }
 }
