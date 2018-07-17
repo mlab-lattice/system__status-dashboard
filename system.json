@@ -14,7 +14,7 @@
           "commit": "93ef8d5ff5beffebd726f5a4079cca598d35f3bf",
           "ssh_key": "/:git-ssh-key"
         },
-        "language": "node:boron",
+        "language": "node:carbon",
         "command": ["cd api && npm install"]
       },
 
