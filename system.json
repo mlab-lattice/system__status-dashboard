@@ -16,7 +16,7 @@
       "build": {
         "git_repository": {
           "url": "git@github.com:mlab-lattice/status-dashboard.git",
-          "commit": "ec9225563a47b8cab0722ccb5d99459d6619083f",
+          "commit": "335360f796296f8ccf957a09d4209e15ac0e3405",
           "ssh_key": "/:git-ssh-key"
         },
         "language": "node:carbon",
