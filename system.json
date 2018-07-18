@@ -6,7 +6,12 @@
       "type": "v1/service",
       "description": "Backend API for status dashboard app",
 
-      "ports": { "12345": { "protocol": "HTTP" } },
+      "ports": {
+        "12345": {
+          "protocol": "HTTP",
+          "external_access": { "public": true }
+        }
+      },
 
       "build": {
         "git_repository": {
