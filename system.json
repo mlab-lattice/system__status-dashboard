@@ -28,7 +28,9 @@
           "LATTICE_STATUS_DASHBOARD_PASSWORD": { "secret": "/:password" },
           "LATTICE_STATUS_DASHBOARD_CONCOURSE_USERNAME": { "secret": "/:concourse-username" },
           "LATTICE_STATUS_DASHBOARD_CONCOURSE_PASSWORD": { "secret": "/:concourse-password" },
-          "LATTICE_STATUS_DASHBOARD_GITHUB_TOKEN": { "secret": "/:github-token" }
+          "LATTICE_STATUS_DASHBOARD_GITHUB_TOKEN": { "secret": "/:github-token" },
+          "AWS_ACCESS_KEY_ID": { "secret": "/:aws-access-key-id" },
+          "AWS_SECRET_ACCESS_KEY": { "secret": "/:aws-secret-access-key" }
         }
       },
 
