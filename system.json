@@ -7,7 +7,7 @@
       "description": "Backend API for status dashboard app",
 
       "ports": {
-        "12345": {
+        "80": {
           "protocol": "HTTP",
           "external_access": { "public": true }
         }
