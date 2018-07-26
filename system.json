@@ -16,7 +16,7 @@
       "build": {
         "git_repository": {
           "url": "git@github.com:mlab-lattice/status-dashboard.git",
-          "commit": "e6c529793bd178b5979c78ce784437a6c86f3e3d",
+          "commit": "63f22ce4d0896220ee11fd8dbcf709b0455eeac4",
           "ssh_key": "/:git-ssh-key"
         },
         "language": "node:carbon",
@@ -35,6 +35,7 @@
           "LATTICE_STATUS_DASHBOARD_CONCOURSE_USERNAME": { "secret": "/:concourse-username" },
           "LATTICE_STATUS_DASHBOARD_CONCOURSE_PASSWORD": { "secret": "/:concourse-password" },
           "LATTICE_STATUS_DASHBOARD_GITHUB_TOKEN": { "secret": "/:github-token" },
+          "LATTICE_STATUS_DASHBOARD_PAGERDUTY_TOKEN": { "secret": "/:pagerduty-token" },
           "AWS_ACCESS_KEY_ID": { "secret": "/:aws-access-key-id" },
           "AWS_SECRET_ACCESS_KEY": { "secret": "/:aws-secret-access-key" }
         }
