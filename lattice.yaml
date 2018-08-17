@@ -9,11 +9,12 @@ components:
   api:
     type: v1/reference
 
-    git_repository:
+    git_repository: {
       url: git@github.com:mlab-lattice/status-dashboard.git
       version: 0.x
-      ssh_key:
-        secret: /:git-ssh-key
+      ssh_key: {
+        "$secret_ref": "/:git-ssh-key"
+      }
 
     parameters:
       node_pool: /:main
