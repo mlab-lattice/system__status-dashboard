@@ -12,8 +12,9 @@ components:
     git_repository:
       url: git@github.com:mlab-lattice/status-dashboard.git
       version: 0.x
-      ssh_key: /:git-ssh-key
-
+      ssh_key: 
+        $secret: git-ssh-key
+     
 
     parameters:
       node_pool: /:main
